@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mi Proyecto Web</title>
+    <style>
+        /* Reset y estilos generales (Mobile First) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        /* Cabecera horizontal y Navegación */
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 1.2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .header-content p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #334155;
+        }
+
+        /* Contenido Principal */
+        main {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .welcome-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .welcome-card h2 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer sencillo */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        /* Media Queries para pantallas más grandes (Desktop) */
+        @media (min-width: 768px) {
+            header {
+                grid-template-columns: 1fr auto;
+                padding: 1rem 2rem;
+            }
+            
+            main {
+                padding: 3rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Gestión de Proyectos Web</h1>
+            <p>Plataforma colaborativa desarrollada con Git y GitHub</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-card">
+            <h2>¡Hola Mundo! Bienvenidos a la aplicación</h2>
+            <p>Este es el archivo principal de nuestro proyecto intermodular. Desde aquí podemos acceder a las distintas secciones creadas de forma colaborativa mediante control de versiones.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Intermodular - 2º DAW.  Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
